@@ -1,0 +1,9 @@
+.weatherIcon {
+    /* float: left; */
+    display: inline-block;
+    max-height: 42px;
+    max-width: 42px;
+}
+h2 {
+    float: left;
+}

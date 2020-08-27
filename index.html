@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    
+    <div class="container-fluid text-center" style="background-color: darkgrey; padding-bottom: 5px;">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4 float-left">
+          <nav class="navbar bg-shade rounded">
+            
+            <h4>Search for a City:</h4>
+              <form id="cityForm" class="form-inline">
+                <input id="cityInput" class="form-control mr-2" type="search" placeholder="type city sans state" aria-label="Search">
+                <button id="citySearch" class="btn btn-primary" type="submit">Search</button>
+              </form>
+             <div id="searchDiv">
+                <!-- fills with search history -->
+              </div>
+            </nav>
+        </div>
+        <div class="col-8 float-right" style="margin-top: 20px;">
+
+          <div id="cityDiv" class="card" style="width: 70%; height: 20rem; justify-content: center">
+            
+            <nobr><h2 class="cityName" style="padding-left: 20px; padding-bottom: 10px"><!-- fills with city name --></h2>
+            <img class="weatherIcon"><</nobr>
+            <div class="cityTemp" style="padding-left: 30px; padding-bottom: 10px"><!--  temp --></div>
+            <div class="cityHum" style="padding-left: 30px; padding-bottom: 10px"><!-- humidity --></div>
+            <div class="cityWind" style="padding-left: 30px; padding-bottom: 10px"><!-- wind --></div>
+            <div class="cityUV" style="padding-left: 30px; padding-bottom: 10px"><!-- UV index --></div>
+          </div>
+
+          <br>
+
+          <h3>Week's Forecast</h3>
+          <div id="cityForecast" class="row">
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
